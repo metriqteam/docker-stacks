@@ -99,7 +99,7 @@ RUN cd /tmp && \
 # Install Tini
 RUN conda install --quiet --yes 'tini=0.18.0' && \
     conda list tini | grep tini | tr -s ' ' | cut -d ' ' -f 1,2 >> $CONDA_DIR/conda-meta/pinned && \
-    conda clean --all -f -y && \
+    conda clean --all -y && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
