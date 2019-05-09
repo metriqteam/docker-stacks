@@ -30,12 +30,9 @@ in working on the project.
 
 ## Build metriq"s GPU image
 ```
-make build/base-notebook-gpu && 
-make build/minimal-notebook-gpu && 
-make build/scipy-notebook-gpu && 
-make build/jupyter-dl-notebook-gp
+make build/base-notebook-gpu && make build/minimal-notebook-gpu && make build/scipy-notebook-gpu &&  make build/jupyter-dl-notebook-gpu
 
-docker push blaaast/jupyter-dl-notebook-gp
+docker push blaaast/jupyter-dl-notebook-gpu
 ```
 
 ## Quick Start
