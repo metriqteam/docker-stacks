@@ -14,4 +14,4 @@ RUN conda install --quiet --yes \
     fix-permissions /home/$NB_USER
 
 # Install Pytorch, uses cuda 9.0, or 10.0
-RUN conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+RUN conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
