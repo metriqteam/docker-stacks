@@ -28,6 +28,16 @@ Anyone in the community can jump in and help with these activities at any time. 
 grant additional permissions (e.g., ability to merge PRs) to anyone who shows an on-going interest
 in working on the project.
 
+## Build metriq"s GPU image
+```
+make build/base-notebook-gpu && 
+make build/minimal-notebook-gpu && 
+make build/scipy-notebook-gpu && 
+make build/jupyter-dl-notebook-gp
+
+docker push blaaast/jupyter-dl-notebook-gp
+```
+
 ## Quick Start
 
 You can try a
