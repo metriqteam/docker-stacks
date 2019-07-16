@@ -13,5 +13,9 @@ RUN conda install --quiet --yes \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
+RUN pip install minio==4.0.18
+ADD ./executhor /home/jovyan/executhor
+ADD ./template.ipynb /home/jovyan/work/template.ipynb
+
 # Install Pytorch, uses cuda 9.0, or 10.0
 RUN conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
