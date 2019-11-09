@@ -41,20 +41,9 @@ RUN conda install --quiet --yes \
     'statsmodels=0.11.*' \
     'sympy=1.5.*' \
     'vincent=0.4.*' \
-<<<<<<< HEAD
     'widgetsnbextension=3.5.*'\
     'xlrd' \
     && \
-||||||| merged common ancestors
-    'beautifulsoup4=4.7.*' \
-    'protobuf=3.7.*' \
-    'xlrd'  && \
-    conda remove --quiet --yes --force qt pyqt && \
-=======
-    'beautifulsoup4=4.7.*' \
-    'protobuf=3.7.*' \
-    'xlrd'  && \
->>>>>>> stop removing qt
     conda clean --all -f -y && \
     # Activate ipywidgets extension in the environment that runs the notebook server
     jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
