@@ -28,27 +28,16 @@ Anyone in the community can jump in and help with these activities at any time. 
 grant additional permissions (e.g., ability to merge PRs) to anyone who shows an on-going interest
 in working on the project.
 
-<<<<<<< HEAD
-## Build metriq"s GPU image
-```
-make build/base-notebook-gpu && make build/minimal-notebook-gpu && make build/scipy-notebook-gpu &&  make build/jupyter-dl-notebook-gpu
-
-docker push blaaast/jupyter-dl-notebook-gpu
-```
-
-||||||| merged common ancestors
-=======
-## Build metriq"s GPU image
+## Build metriq's GPU image
 ```
 make build/base-notebook-gpu && 
 make build/minimal-notebook-gpu && 
-make build/scipy-notebook-gpu && 
-make build/jupyter-dl-notebook-gp
+make build/scipy-notebook-gpu &&
+make build/jupyter-dl-notebook-gpu
 
-docker push blaaast/jupyter-dl-notebook-gp
+docker push blaaast/jupyter-dl-notebook-gpu:1.1.0
 ```
 
->>>>>>> Add build steps for metriq image
 ## Quick Start
 
 You can try a
